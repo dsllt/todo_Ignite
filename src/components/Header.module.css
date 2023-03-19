@@ -1,0 +1,26 @@
+.header{
+  display: flex;
+  padding: 7.2rem 0 8rem 0;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--gray-700);
+}
+
+.logoImg{
+  height: 3.6rem;
+  padding-right: 1.2rem;
+}
+
+.blueText, .purpleText{
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.blueText{
+  color: var(--blue);
+}
+
+.purpleText{
+  color: var(--purple);
+}

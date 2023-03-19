@@ -1,0 +1,72 @@
+.input{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 2.7rem;
+  gap: 8px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.tasksHeader{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+  width: 74rem;
+}
+
+.totalCreatedTasks, .totalFinishedTasks{
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+.totalCreatedTasks span, .totalFinishedTasks span{
+  margin-left: 8px;
+  color: var(--gray-200);
+  font-size: 12px;
+  line-height: 15px;
+  background: var(--gray-400);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.totalCreatedTasks {
+  color: var(--blue);
+}
+
+.totalFinishedTasks{
+  color: var(--purple);
+}
+
+.tasks{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.emptyTasks{
+  border-top: 1px solid var(--gray-400);
+  display: flex;
+  flex-direction: column;
+  width: 74rem;
+  align-items: center;
+}
+
+.emptyTasks img{
+  width: 5.6rem;
+  height: 5.6rem;
+  margin-top: 6.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.emptyTasks strong{
+  margin-bottom: 0.5rem;
+}

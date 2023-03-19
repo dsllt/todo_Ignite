@@ -1,0 +1,22 @@
+.inputWrapper{
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-700);
+  padding: 1.6rem;
+  width: fit-content;
+}
+
+.input{
+  background: transparent;
+  border: none;
+  width: 60rem;
+  color: var(--white);
+}
+
+.inputWrapper:focus-within{
+  border: 1px solid var(--purple-dark);
+}
+
+.input:focus{
+  outline: transparent;
+}
