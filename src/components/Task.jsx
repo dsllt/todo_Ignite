@@ -4,14 +4,15 @@ import { DeleteButton } from './DeleteButton'
 import styles from './Task.module.css'
 
 export function Task(props) {
-  const [isChecked, setIsChecked] = useState(false)
+  const [isChecked, setIsChecked] = useState(false);
 
   function handleCheckInCheckbox() {
+    props.onCheck(props.id);
     setIsChecked(prev => !prev)
   }
-
+  
   function handleDeleteTask(){
-    props.onDeleteTask(props.content);
+    props.onDeleteTask(props.id);
   }
 
   useEffect(()=>{
@@ -25,8 +26,9 @@ export function Task(props) {
         return prevCount
       });
     }
-  }, [isChecked])
 
+  }, [isChecked])
+  
   return (
     <div className={styles.task}>
       <Checkbox
